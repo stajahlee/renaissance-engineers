@@ -2,12 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CarouselModule, WavesModule, ButtonsModule, NavbarModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    IntroComponent
   ],
   imports: [
     BrowserModule,
