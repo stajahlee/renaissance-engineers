@@ -22,7 +22,7 @@
     </links>
   </mdb-navbar>
   <!-- Main -->
-  <div class="view intro-2">
+  <!-- <div class="view intro-2">
     <div class="full-bg-img">
       <div class="mask rgba-purple-light flex-center">
         <div class="container text-center white-text wow fadeInUp">
@@ -35,30 +35,132 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  <!--Carousel Wrapper-->
+  <mdb-carousel [isControls]="true" class="carousel slide" [animation]="'slide'">
+    <!--First slide-->
+    <mdb-carousel-item>
+      <!--Mask color-->
+      <div class="view">
+        <!--Video source-->
+        <video class="video-fluid" autoplay loop>
+          <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+        </video>
+        <div class="mask rgba-indigo-light waves-light" mdbWavesEffect></div>
+      </div>
+
+      <!--Caption-->
+      <div class="carousel-caption">
+        <div class="animated fadeInDown">
+          <!-- Light mask -->
+          <h3 class="h3-responsive">Renaissance Engineers</h3>
+          <p>Quick line about the R.E.</p>
+        </div>
+      </div>
+      <!--Caption-->
+    </mdb-carousel-item>
+    <!--/First slide-->
+    <!--Second slide-->
+    <mdb-carousel-item>
+      <!--Mask color-->
+      <div class="view">
+        <!--Video source-->
+        <video class="video-fluid" autoplay loop>
+          <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
+        </video>
+        <div class="mask rgba-purple-slight waves-light" mdbWavesEffect></div>
+      </div>
+
+      <!--Caption-->
+      <div class="carousel-caption">
+        <div class="animated fadeInDown">
+          <!-- Super light mask -->
+          <h3 class="h3-responsive">Create for Good</h3>
+          <p>Quick line about this intro video</p>
+        </div>
+      </div>
+      <!--Caption-->
+    </mdb-carousel-item>
+    <!--/Second slide-->
+    <!--Third slide-->
+    <mdb-carousel-item>
+      <!--Mask color-->
+      <div class="view">
+        <!--Video source-->
+        <video class="video-fluid" autoplay loop>
+          <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+        </video>
+        <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+      </div>
+
+      <!--Caption-->
+      <div class="carousel-caption">
+        <div class="animated fadeInDown">
+          <!-- Strong mask -->
+          <h3 class="h3-responsive">Another intro video</h3>
+          <p>Quick line about this intro video</p>
+        </div>
+      </div>
+      <!--Caption-->
+    </mdb-carousel-item>
+    <!--/Third slide-->
+  </mdb-carousel>
+  <!--Carousel Wrapper-->
+
   <!-- /.Main -->
 </header>
 <!--Main Navigation-->
 
-<!--Main Layout-->
-<main class="text-center py-5">
+<!--Main layout-->
+<main>
+  <app-about></app-about>
+</main>
+<!--Main layout-->
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
+<!--Footer-->
+<footer class="page-footer blue pt-4 mt-4">
 
-        <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <!--Footer Links-->
+  <div class="container-fluid text-center text-md-left">
+    <!--Social buttons-->
+    <div class="text-center mb-3">
+      <a mdbBtn floating="true" size="lg" class="btn-fb waves-light waves-effect" mdbWavesEffect>
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a mdbBtn floating="true" size="lg" class="btn-tw waves-light waves-effect" mdbWavesEffect>
+        <i class="fa fa-twitter"> </i>
+      </a>
+      <a mdbBtn floating="true" size="lg" class="btn-gplus waves-light waves-effect" mdbWavesEffect>
+        <i class="fa fa-google-plus"> </i>
+      </a>
+      <a mdbBtn floating="true" size="lg" class="btn-li waves-light waves-effect" mdbWavesEffect>
+        <i class="fa fa-linkedin"> </i>
+      </a>
+      <a mdbBtn floating="true" size="lg" class="btn-git waves-light waves-effect" mdbWavesEffect>
+        <i class="fa fa-github"> </i>
+      </a>
+      <a mdbBtn floating="true" size="lg" class="btn-pin waves-light waves-effect" mdbWavesEffect>
+        <i class="fa fa-pinterest"> </i>
+      </a>
+      <a mdbBtn floating="true" size="lg" class="btn-ins waves-light waves-effect" mdbWavesEffect>
+        <i class="fa fa-instagram"> </i>
+      </a>
 
-      </div>
+    </div>
+    <!--/.Social buttons-->
+  </div>
+  <!--/.Footer Links-->
+
+  <!--Copyright-->
+  <div class="footer-copyright text-center py-3">
+    <div class="container-fluid">
+      © 2018 Copyright - The Renaissance Engineers
+    </div>
+    <div class="container-fluid">
+      Built with <a href="https://www.MDBootstrap.com"> MDBootstrap Angular </a>
     </div>
   </div>
-
-</main>
-<!--Main Layout-->
+  <!--/.Copyright-->
+</footer>
+<!--/.Footer-->
